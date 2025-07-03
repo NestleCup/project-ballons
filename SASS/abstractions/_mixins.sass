@@ -12,7 +12,6 @@
 
 @mixin gridColumn($quantity, $columns)
         width: calc(#{$quantity} * ((100% - (#{$columns} - 1) * #{$grid-gap}) / #{$columns}) + (#{$quantity} - 1) * #{$grid-gap})
-        background: green
         float: left
         &:not(:last-child)
                 margin-right: $grid-gap
