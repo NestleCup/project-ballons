@@ -40,14 +40,17 @@ body
   letter-spacing: 1rem
   text-transform: uppercase
   font-weight: 800
-  background: linear-gradient(90deg, rgba($brown-color-light, 0.7) 0.03%, rgba($brown-color-dark, 0.7) 99.94%)
+  background: linear-gradient(90deg, rgba($brown-color-light, 0.7), rgba($brown-color-dark, 0.7))
   -webkit-background-clip: text
   color: transparent
   transition: all .4s
   backface-visibility: hidden
+  text-shadow: $text-shadow
   &:hover
     transform: skewY(2deg) skewX(15deg) scale(1.1)
     text-shadow: $text-shadow
+  &_white
+    color: $color-white
 
 .title-third
   font-size: $font-size-h3
