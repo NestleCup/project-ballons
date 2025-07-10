@@ -12,10 +12,52 @@
     <title>Balloons</title>
   </head>
   <body>
-    <div class="container">
-      <header class="header">
-        <img src="./icon/logo.svg" alt="Воздушный шар" class="header__logo" />
-        <div class="header__box">
+      <header>
+        <div class="header__top">
+            <img src="./icon/logo.svg" alt="Воздушный шар" class="header__logo"  />
+            <span class="header__slogan">Выше только звёзды</span>
+        </div>
+        <nav class="header__nav">
+          <ul class="nav__list">
+            <li >
+              <a href="#" class="nav__link">
+                8 (900) 000 00 00
+              </a>
+            </li>
+            <li>
+               <a href="#" class="nav__link">
+                О НАС
+              </a>
+            </li>
+            <li >
+              <a href="#" class="nav__link">
+                ПРЕИМУЩЕСТВА
+              </a>
+            </li>
+            <li >
+              <a href="#" class="nav__link">
+                ТУРЫ
+              </a>
+            </li>
+            <li >
+               <a href="#" class="nav__link">
+                ОТЗЫВЫ
+              </a>
+            </li>
+            <li >
+              <a href="#" class="nav__link">
+                КОНТАКТЫ
+              </a>
+            </li>
+            <a href="#?" class="btn-text">Узнать больше &rarr;</a>
+
+          </ul>
+        </nav>
+      </header>
+       <div class="container">
+    <main>
+      <section class="section-header">
+        <div class="section-header__box">
           <h1 class="title-first">
             <span class="title-first__main">ТУРЫ НА ВОЗДУШНОМ ШАРЕ</span>
             <span class="title-first__secondary">
@@ -24,8 +66,8 @@
           </h1>
           <a href="#?" class="btn btn_animated">НАШ КАТАЛОГ</a>
         </div>
-      </header>
-      <main>
+      </section>
+      
         <section class="section-about margin-bottom-80px">
           <div class="text-align-center margin-bottom-80px">
             <h2 class="title-secondary">Невероятное ощущение свободы</h2>
@@ -281,6 +323,40 @@
           </div> 
           <div class="text-align-center margin-bottom-80px">
             <a href="#?" class="btn btn_animated">ЗАБРОНИРОВАТЬ</a>
+          </div>
+        </section>
+        <section class="section-form">
+          <div class="row">
+            <div class="book">
+              <div class="book__form">
+                <form action="#" class="form">
+                  <div class="text-align-center margin-bottom-30px">
+                    <h2 class="title-secondary">Забронировать тур</h2>
+                  </div>
+                  <div class="form__group">
+                    <input type="text" class="form__input" placeholder="Имя  фамилия" id="name" required>
+                    <label for="name"  class="form__label">Ваше имя и фамилия</label>
+                  </div>
+                  <div class="form__group">
+                    <input type="email" class="form__input" placeholder="E-mail" id="email" required>
+                    <label for="email" class="form__label">Ваш E-mail</label>
+                  </div>
+                  <div class="form__group">
+                    <div class="form__group-radio">
+                      <input type="radio" class="form__input-radio" id="tour-1" name="checked">
+                      <label for="tour-1" class="form__label-radio"><span class="form__button-radio"></span> Групповой тур</label>
+                    </div>
+                    <div class="form__group-radio">
+                      <input type="radio" class="form__input-radio" id="tour-2" name="checked">
+                      <label for="tour-2" class="form__label-radio" ><span class="form__button-radio"></span> Индивидуальный тур</label>
+                    </div>
+                  </div>
+                  <div class="form__group">
+                    <button class="btn btn__brown">забронировать</button>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </section>
       </main>

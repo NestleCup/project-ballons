@@ -1,0 +1,81 @@
+
+.book
+  height: 50rem
+  background: linear-gradient(110deg, rgba(255, 255, 255, 0.8) , rgba(255,255,255,0.9) 55%, rgba(186, 133, 80, 0.4) 55.1%, rgba(161, 79, 3, 0.4) ), url(../img/bg-form.jpg) center / cover no-repeat
+  box-shadow: $box-shadow
+  overflow: hidden
+  border-radius: .5rem
+.form
+  width: 60%
+  padding: 5rem 0 0 5rem 
+  
+  &__group:not(:last-child)
+    margin-bottom: 3rem
+  &__group:nth-child(4)
+    margin-bottom: 4rem
+    
+  &__input
+    font-size: $font-size-paragraph
+    letter-spacing: .2rem
+    font-weight: 400
+    color: $color-black
+    padding: 2rem 0 2rem 2rem
+    background-color: $color-white
+    border: none
+    border-bottom: .3rem solid transparent
+    border-radius: .5rem
+    box-shadow: $box-shadow
+    width: 75%
+    &:focus
+      outline: none
+      border-bottom: .3rem solid #66D763
+    &:focus:invalid
+      border-bottom: .3rem solid #D76363
+
+  &__label
+    font-size: $font-size-paragraph
+    letter-spacing: .2rem
+    font-weight: 400
+    display: block
+    margin-top: 1rem
+    margin-left: 1.5rem
+    transition: .2s all
+    color: $color-grey
+    
+  &__input:placeholder-shown + &__label
+    opacity: 0
+    visibility: none
+    transform: translateY(-1rem)
+  &__group-radio
+    width: 40%
+    display: inline-block
+  &__input-radio
+    display: none
+  &__label-radio
+    position: relative
+    cursor: pointer
+    padding-left: 4rem
+  &__button-radio
+    height: 3rem
+    width: 3rem
+    border-radius: 50%
+    border: .5rem solid $brown-color-dark
+    display: block
+    position: absolute
+    left: 0
+    top: -0.4rem
+    &::after
+      content: ''
+      display: block
+      border-radius: 50%
+      background: $brown-color-dark
+      height: 1.5rem
+      width: 1.5rem
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      opacity: 0
+      transition: all .2s
+  &__input-radio:checked ~ &__label-radio &__button-radio::after
+    opacity: 1
