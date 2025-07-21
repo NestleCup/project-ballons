@@ -16,49 +16,49 @@
 
   <body>
       <header>
-        <div class="header__top">
-            <img src="./icon/logo.svg" alt="Воздушный шар" class="header__logo"  />
-            <span class="header__slogan">Выше только звёзды</span>
-        </div>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li >
-              <a href="#" class="nav__list-blue">
-                8 (900) 000 00 00
-              </a>
-            </li>
-            <li>
-               <a href="#" class="nav__list-blue">
-                О НАС
-              </a>
-            </li>
-            <li >
-              <a href="#" class="nav__list-blue">
-                ПРЕИМУЩЕСТВА
-              </a>
-            </li>
-            <li >
-              <a href="#" class="nav__list-blue">
-                ТУРЫ
-              </a>
-            </li>
-            <li>
-               <a href="#" class="nav__list-blue">
-                ОТЗЫВЫ
-              </a>
-            </li>
-            <li >
-              <a href="#" class="nav__list-blue">
-                КОНТАКТЫ
-              </a>
-            </li>
-            <a href="#?" class="btn-text">Узнать больше &rarr;</a>
+        <div class="header__container">
+          <div class="header__top">
+              <img src="./icon/logo.svg" alt="Воздушный шар" class="header__logo"  />
+              <span class="header__slogan">Выше только звёзды</span>
+          </div>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li >
+                <a href="#" class="nav__list-blue">
+                  8 (900) 000 00 00
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav__list-blue">
+                  о нас
+                </a>
+              </li>
+              <li >
+                <a href="#" class="nav__list-blue">
+                  преимущества
+                </a>
+              </li>
+              <li >
+                <a href="#" class="nav__list-blue">
+                  туры
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav__list-blue">
+                  отзывы
+                </a>
+              </li>
+              <li >
+                <a href="#" class="nav__list-blue">
+                  контакты
+                </a>
+              </li>
+              <a href="#?" class="btn-text">Узнать больше &rarr;</a>
 
-          </ul>
-        </nav>
-      </header>
-      <div class="container">
-        <div class="burger-menu">
+            </ul>
+          </nav>
+        </div>
+         <div class="burger-menu">
           <input type="checkbox" class="burger-menu__toggle" id="burger-toggle">
     
           <label for="burger-toggle" class="burger-menu__button">
@@ -85,6 +85,8 @@
             </ul>
           </nav>
         </div>
+      </header>
+      <div class="container">
         <main>
           <section class="section-header">
             <div class="section-header__box">
@@ -131,7 +133,8 @@
           </section>
           <section class="section-adventure margin-bottom-80px">
               <div class="row">
-                <div class="adventure-card col-1-of-4">
+                <div class="col-1-of-4">
+                  <div class="adventure-card">
                   <i class="adventure-card__icon icon-Vector-3 margin-bottom-30px"></i>
                   <h3 class="title-third margin-bottom-10px">
                     Приключения  
@@ -141,8 +144,11 @@
                     высоты птичьего полета. Незабываемое ощущение свободы и красоты
                     природы гарантировано!
                   </p>
+                  </div>
+                  
                 </div>
-              <div class="adventure-card col-1-of-4">
+              <div class="col-1-of-4">
+                <div class="adventure-card">
                   <i class="adventure-card__icon icon-Vector-2 margin-bottom-30px"></i>
                   <h3 class="title-third margin-bottom-10px">
                     Приключения  
@@ -152,8 +158,11 @@
                     высоты птичьего полета. Незабываемое ощущение свободы и красоты
                     природы гарантировано!
                   </p>
+                  </div>
                 </div>
-                <div class="adventure-card col-1-of-4">
+                <div class="col-1-of-4">
+                
+                   <div class="adventure-card">
                   <i class="adventure-card__icon icon-Vector-1 margin-bottom-30px"></i>
                   <h3 class="title-third margin-bottom-10px">
                     Приключения  
@@ -164,16 +173,20 @@
                     природы гарантировано!
                   </p>
                 </div>
-                <div class="adventure-card col-1-of-4">
-                  <i class="adventure-card__icon icon-Vector margin-bottom-30px"></i>
-                  <h3 class="title-third margin-bottom-10px">
-                    Приключения  
-                  </h3>
-                  <p class="paragraph ">
-                    Поднимитесь на высоту до 6000 метров и откройте для себя мир с
-                    высоты птичьего полета. Незабываемое ощущение свободы и красоты
-                    природы гарантировано!
-                  </p>
+                </div>
+                <div class="col-1-of-4">
+              
+                 <div class="adventure-card">
+                    <i class="adventure-card__icon icon-Vector margin-bottom-30px"></i>
+                    <h3 class="title-third margin-bottom-10px">
+                      Приключения  
+                    </h3>
+                    <p class="paragraph ">
+                      Поднимитесь на высоту до 6000 метров и откройте для себя мир с
+                      высоты птичьего полета. Незабываемое ощущение свободы и красоты
+                      природы гарантировано!
+                    </p>
+                  </div> 
                 </div>
               </div>
           </section>
@@ -212,7 +225,7 @@
                           <p class="card-tour__text card-tour__text_2">
                             5990₽
                           </p>
-                          <a href="#?" class="btn btn_animated">ЗАБРОНИРОВАТЬ</a>
+                          <a href="#?" class="btn btn_animated btn_animated--none">ЗАБРОНИРОВАТЬ</a>
                         </div>
                       
                       </div>
@@ -248,7 +261,7 @@
                           <p class="card-tour__text card-tour__text_2">
                             8990₽
                           </p>
-                          <a href="#?" class="btn btn_animated">ЗАБРОНИРОВАТЬ</a>
+                          <a href="#?" class="btn btn_animated btn_animated--none">ЗАБРОНИРОВАТЬ</a>
                         </div>
                       
                       </div>
@@ -284,7 +297,7 @@
                           <p class="card-tour__text card-tour__text_2">
                             6999₽
                           </p>
-                          <a href="#?" class="btn btn_animated">ЗАБРОНИРОВАТЬ</a>
+                          <a href="#?" class="btn btn_animated ">ЗАБРОНИРОВАТЬ</a>
                         </div>
                       
                       </div>
@@ -292,7 +305,7 @@
                   </div>
               </div>
               <div class="text-align-center margin-bottom-80px">
-                <a href="#?" class="btn btn_animated">ЗАБРОНИРОВАТЬ</a>
+                <a href="#?" class="btn btn_animated ">ЗАБРОНИРОВАТЬ</a>
               </div>
           </section>
           <section class="section-reviews">
@@ -431,36 +444,5 @@
         </div>
       </footer>
     </div>
-
-    <!-- <div class="grid-test">
-      <div class="row">
-        <div class="col-1-of-2">col-1-of-2</div>
-        <div class="col-1-of-2">col-1-of-2</div>
-      </div>
-      <div class="row">
-        <div class="col-1-of-3">col-1-of-3</div>
-        <div class="col-1-of-3">col-1-of-3</div>
-        <div class="col-1-of-3">col-1-of-3</div>
-      </div>
-      <div class="row">
-        <div class="col-1-of-3">col-1-of-3</div>
-        <div class="col-2-of-3">col-2-of-3</div>
-      </div>
-      <div class="row">
-        <div class="col-1-of-4">col-1-of-4</div>
-        <div class="col-1-of-4">col-1-of-4</div>
-        <div class="col-1-of-4">col-1-of-4</div>
-        <div class="col-1-of-4">col-1-of-4</div>
-      </div>
-      <div class="row">
-        <div class="col-1-of-4">col-1-of-4</div>
-        <div class="col-1-of-4">col-1-of-4</div>
-        <div class="col-2-of-4">col-2-of-4</div>
-      </div>
-      <div class="row">
-        <div class="col-1-of-4">col-1-of-4</div>
-        <div class="col-3-of-4">col-3-of-4</div>
-      </div>
-    </div> -->
   </body>
 </html>

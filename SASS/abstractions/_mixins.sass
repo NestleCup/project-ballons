@@ -1,18 +1,31 @@
 @mixin style-link($color)
-    color: $color
-    display: inline-block
-    text-decoration: none
-    text-transform: uppercase
+  color: $color
+  display: inline-block
+  text-decoration: none
+  text-transform: uppercase
 
-@mixin clearFix
-    &::after
-        content: ""
-        display: table
-        clear: both
+@mixin clearfix
+  &::after
+    content: ""
+    display: table
+    clear: both
 
 @mixin gridColumn($quantity, $columns)
-        width: calc(#{$quantity} * ((100% - (#{$columns} - 1) * #{$grid-gap}) / #{$columns}) + (#{$quantity} - 1) * #{$grid-gap})
-        float: left
-        &:not(:last-child)
-                margin-right: $grid-gap
+  width: calc(#{$quantity} * ((100% - (#{$columns} - 1) * #{$grid-gap}) / #{$columns}) + (#{$quantity} - 1) * #{$grid-gap})
+  float: left
+  &:not(:last-child)
+    margin-right: $grid-gap
 
+@mixin respond($breakpoint)
+  @if $breakpoint == phone
+    @media (max-width: 600px) 
+      @content
+  @if $breakpoint == tab-port
+    @media (max-width: 1000px) 
+      @content
+  @if $breakpoint == tab-land
+    @media (max-width: 1300px) 
+      @content
+  @if $breakpoint == big-screen
+    @media (min-width: 1800px) 
+      @content

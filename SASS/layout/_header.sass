@@ -1,6 +1,6 @@
-header
-  background-color: rgba($color-white, 0.7)
+.header__container
   position: fixed
+  background-color: rgba($color-white, 0.7)
   top: 0
   left: 0
   z-index: 8
@@ -11,9 +11,51 @@ header
   align-items: center
   padding: 0 5rem
   box-shadow:$box-shadow
-.header__top
+  @include respond(tab-port)
+    display: none
+  @include respond(phone)
+    display: none
+  &__top
     display: flex
     align-items: center
     img
       padding-right: 1rem  
+    &__slogan
+      text-transform: uppercase
+
+.nav__list
+  list-style: none
+  display: flex
+  align-items: center
+  @include respond(phone)
+      display: block
+  li
+    @include respond(phone)
+        padding: 2rem 0
+        
+    &:not(:last-child)
+      padding-right: 3rem
+      @include respond(phone)
+        padding-right: 0
+      
+    a
+      &:link, &:visited
+        text-transform: uppercase
+        font-size: $font-size-paragraph
+        letter-spacing: .1rem
+        // font-weight: 300px
+        display: inline-block
+        transition: .5s
+        @include respond(phone)
+          font-size: 3rem 
+      &:hover
+        transform: rotate(3deg) scale(1.1)
+        color: $brown-color-dark
+        text-shadow: $text-shadow
+        
+.nav__list-blue
+  color: $blue-color-dark
+.nav__list-gray
+  color: $color-grey
+
 

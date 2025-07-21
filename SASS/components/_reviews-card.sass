@@ -4,11 +4,16 @@
   background: rgba($color-white,0.75 )
   margin: 0 auto
   padding: 6rem
-  transform: skewX(13deg)
+  transform: skewX(330deg)
+  @include respond(tab-port)
+    transform: skewX(350deg)
+    padding: 3rem
   & > *
-    transform: skewX(-13deg)
-  &__box
-  &__img
+    transform: skewX(-330deg)
+    @include respond(tab-port)
+      transform: skewX(-350deg)
+      text-align: center
+  &__img 
     position: relative
     width: 15rem
     height: 15rem
@@ -18,10 +23,15 @@
     -webkit-shape-outside: circle(50% at 50% 50%)
     margin-right: 4rem
     overflow: hidden
+    @include respond(tab-port)
+      float: none
+      margin: 0 auto
+      margin-bottom: 3rem
     img
       height: 100%
       transform: scale(1.2)
       transition: .5s all
+      
   &__name
     position: absolute
     top: 50%

@@ -5,14 +5,26 @@
   box-shadow: $box-shadow
   overflow: hidden
   border-radius: .5rem
+  @include respond(tab-port)
+    background: linear-gradient(110deg, rgba(255, 255, 255, 0.8) , rgba(255,255,255,0.9) 505%, rgba(186, 133, 80, 0.4) 55.1%, rgba(161, 79, 3, 0.4) ), url(../img/bg-form.jpg) center / cover no-repeat
+    height: 100%
+      
 .form
-  width: 60%
+  width: 65%
   padding: 5rem 0 0 5rem 
+  @include respond(tab-port)
+    width: 100%
+    padding: 5rem  
   
   &__group:not(:last-child)
     margin-bottom: 3rem
   &__group:nth-child(4)
     margin-bottom: 4rem
+  @include respond(tab-land)
+    &__group:not(:last-child)
+      margin-bottom: 0
+    &__group:nth-child(4)
+      margin-bottom: 2.5rem
     
   &__input
     font-size: $font-size-paragraph
@@ -31,6 +43,9 @@
       border-bottom: .3rem solid #66D763
     &:focus:invalid
       border-bottom: .3rem solid #D76363
+    @include respond(tab-port)
+      width: 100%
+      box-shadow:  $box-shadow
 
   &__label
     font-size: $font-size-paragraph
@@ -41,20 +56,28 @@
     margin-left: 1.5rem
     transition: .2s all
     color: $color-grey
-    
+    @include respond(tab-port)
+      margin: 2rem 0    
   &__input:placeholder-shown + &__label
     opacity: 0
     visibility: none
     transform: translateY(-1rem)
   &__group-radio
-    width: 40%
-    display: inline-block
+      display: inline-block
+      &:not(:last-child)
+        margin-right: 2rem
+      @include respond(tab-land)
+        display: block
+        &:not(:last-child)
+          margin-bottom: 2rem
+        
   &__input-radio
     display: none
   &__label-radio
     position: relative
     cursor: pointer
     padding-left: 4rem
+    
   &__button-radio
     height: 3rem
     width: 3rem

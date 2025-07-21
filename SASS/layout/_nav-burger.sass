@@ -1,4 +1,5 @@
 .burger-menu
+  display: none
   &__toggle
     display: none
   &__button
@@ -70,12 +71,12 @@
     opacity: 1
   &__icon
     position: relative
-    margin-top: 39px
+    margin-top: 3.9rem
     &,
     &::before,
     &::after
-      width: 35px
-      height: 3px
+      width: 3.5rem
+      height: .3rem
       background: $blue-color-dark
       display: inline-block
     &::before,
@@ -85,13 +86,13 @@
       transition: all .5s
       left: 0
     &::before
-      top: -10px
+      top: -1rem
     &::after
-      top: 10px
+      top: 1rem
   &__button:hover &__icon::before
-    top: -12px
+    top: -1.2rem
   &__button:hover &__icon::after
-    top: 12px
+    top: 1.2rem
   &__toggle:checked + &__button &__icon
     background: transparent
   &__toggle:checked + &__button &__icon::after
@@ -100,6 +101,16 @@
   &__toggle:checked + &__button &__icon::before
     top: 0
     transform: rotate(-135deg)
+  @include respond(tab-port)
+    display: block
+  @include respond(phone)
+    display: block
+
+
+
+
+
+  
 
     
     
