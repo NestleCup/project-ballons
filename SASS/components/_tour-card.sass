@@ -3,7 +3,7 @@
   perspective: 150rem
   -moz-perspective: 150rem
   position: relative
-  @include respond(tab-port)
+  @media only screen and (max-width: 1000px), (hover:none)
     height: auto
 
   &__side
@@ -18,18 +18,18 @@
     box-shadow: $box-shadow
     border-radius: .3rem 
     overflow: hidden
-    @include respond(tab-port)
+    @media only screen and (max-width: 1000px), (hover:none)
       height: auto
       background-color: $color-white  
       position: relative
     &_front
       padding-bottom: 10rem
-      @include respond(tab-port)
+      @media only screen and (max-width: 1000px), (hover:none)
         padding-bottom: 20rem
     &_back
       background: linear-gradient(120deg, $brown-color-light, $brown-color-dark )
       transform: rotateY(180deg)
-      @include respond(tab-port)
+      @media only screen and (max-width: 1000px), (hover:none)
         transform: rotateY(0deg)
         padding: 5rem
         padding-top: 12rem
@@ -45,7 +45,7 @@
     background-blend-mode: hard-light
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%)
     height: 24.5rem
-    @include respond(tab-port)
+    @media only screen and (max-width: 1000px), (hover:none)
       height: 40rem
     &_1
       background: $brown-color-light url('../img/card-1.jpg') center / cover no-repeat
@@ -97,7 +97,7 @@
     top: 50%
     left: 50%
     transform: translate(-50%, -50%)
-    @include respond(tab-port)
+    @media only screen and (max-width: 1000px), (hover:none)
       text-align: center
       position: relative
       top: 0%

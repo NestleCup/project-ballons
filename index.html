@@ -9,14 +9,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/icon-fonts.css">
-    <script src="chat.js"></script>
+
     <title>Balloons</title>
   </head>
 
 
   <body>
       <header>
-        <div class="header__container">
+        <div class="header">
           <div class="header__top">
               <img src="./icon/logo.svg" alt="Воздушный шар" class="header__logo"  />
               <span class="header__slogan">Выше только звёзды</span>
@@ -29,36 +29,36 @@
                 </a>
               </li>
               <li>
-                <a href="#" class="nav__list-blue">
+                <a href="#section-about" class="nav__list-blue">
                   о нас
                 </a>
               </li>
               <li >
-                <a href="#" class="nav__list-blue">
+                <a href="#section-adventure" class="nav__list-blue">
                   преимущества
                 </a>
               </li>
-              <li >
-                <a href="#" class="nav__list-blue">
+              <li>
+                <a href="#section-tour" class="nav__list-blue">
                   туры
                 </a>
               </li>
               <li>
-                <a href="#" class="nav__list-blue">
+                <a href="#section-reviews" class="nav__list-blue">
                   отзывы
                 </a>
               </li>
               <li >
-                <a href="#" class="nav__list-blue">
+                <a href="#section-form" class="nav__list-blue">
                   контакты
                 </a>
               </li>
-              <a href="#?" class="btn-text">Узнать больше &rarr;</a>
+              <a href="#section-form" class="btn-text">Узнать больше &rarr;</a>
 
             </ul>
           </nav>
         </div>
-         <div class="burger-menu">
+        <div class="burger-menu">
           <input type="checkbox" class="burger-menu__toggle" id="burger-toggle">
     
           <label for="burger-toggle" class="burger-menu__button">
@@ -68,19 +68,19 @@
           <nav class="burger-menu__nav">
             <ul class="burger-menu__list">
               <li class="burger-menu__item">
-                <a href="#" class="burger-menu__link">О нас</a>
+                <a href="#section-about" id="navigation__link" class="burger-menu__link">О нас</a>
               </li>
               <li class="burger-menu__item">
-                <a href="#" class="burger-menu__link">Преимущества</a>
+                <a id="navigation__link" href="#section-adventure" class="burger-menu__link">Преимущества</a>
               </li>
               <li class="burger-menu__item">
-                <a href="#" class="burger-menu__link">Туры</a>
+                <a id="navigation__link" href="#section-tour" class="burger-menu__link">Туры</a>
               </li>
-              <li class="burger-menu__item">
-                <a href="#" class="burger-menu__link">Отзывы</a>
+              <li id="navigation__link" class="burger-menu__item">
+                <a href="#section-reviews" class="burger-menu__link">Отзывы</a>
               </li>
-              <li class="burger-menu__item">
-                <a href="#" class="burger-menu__link">Контакты</a>
+              <li id="navigation__link" class="burger-menu__item">
+                <a href="#section-form" class="burger-menu__link">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -88,7 +88,7 @@
       </header>
       <div class="container">
         <main>
-          <section class="section-header">
+          <section id="section-header" class="section-header">
             <div class="section-header__box">
               <h1 class="title-first">
                 <span class="title-first__main">ТУРЫ НА ВОЗДУШНОМ ШАРЕ</span>
@@ -99,7 +99,7 @@
               <a href="#?" class="btn btn_animated">НАШ КАТАЛОГ</a>
             </div>
           </section>
-          <section class="section-about margin-bottom-80px">
+          <section id="section-about" class="section-about margin-bottom-80px">
               <div class="text-align-center margin-bottom-80px">
                 <h2 class="title-secondary">Невероятное ощущение свободы</h2>
               </div>
@@ -126,12 +126,21 @@
                 </div>
                 <div class="col-1-of-2">
                   <div class="composition">
-                    <img src="img/1.png" alt="" class="composition__photo composition__photo_n1">
-                    <img src="img/2.png" alt="" class="composition__photo composition__photo_n2"><img src="img/3.png" alt="" class="composition__photo composition__photo_n3">
+                    <img src="img/photosBalloons1.png"
+                    srcset="img/photosBalloons1.png 954w, img/photosBalloons1-small.png 318w" sizes="(max-width: 1240px) 23vw, (max-width: 90px) 43vw, (max-width:600px) 47vw, 300px" alt="photo1" class="composition__photo composition__photo_n1">
+
+                    <img src="img/photosBalloons2.png" alt="photo2" 
+                     srcset="img/photosBalloons2.png 954w, img/photosBalloons2-small.png 318w"
+                     sizes="(max-width: 1240px) 23vw, (max-width: 90px) 43vw, (max-width:600px) 47vw, 300px"                     class="composition__photo composition__photo_n2">
+
+                    <img src="img/photosBalloons3.png" alt="photo3" 
+                     srcset="img/photosBalloons3.png 954w, img/photosBalloons3-small.png 318w"
+                     sizes="(max-width: 1240px) 23vw, (max-width: 90px) 43vw, (max-width:600px) 47vw, 300px"
+                     class="composition__photo composition__photo_n3">
                 </div>
               </div>
           </section>
-          <section class="section-adventure margin-bottom-80px">
+          <section id="section-adventure" class="section-adventure margin-bottom-80px">
               <div class="row">
                 <div class="col-1-of-4">
                   <div class="adventure-card">
@@ -190,7 +199,7 @@
                 </div>
               </div>
           </section>
-          <section class="section-tour">
+          <section id="section-tour" class="section-tour">
               <div class="text-align-center margin-bottom-80px">
                   <h2 class="title-secondary">НАИБОЛЕЕ ПОПУЛЯРНЫЕ ТУРЫ</h2>
               </div>
@@ -225,7 +234,7 @@
                           <p class="card-tour__text card-tour__text_2">
                             5990₽
                           </p>
-                          <a href="#?" class="btn btn_animated btn_animated--none">ЗАБРОНИРОВАТЬ</a>
+                          <a href="#?" class="btn btn_animated btn_animated--none">заказать</a>
                         </div>
                       
                       </div>
@@ -261,7 +270,7 @@
                           <p class="card-tour__text card-tour__text_2">
                             8990₽
                           </p>
-                          <a href="#?" class="btn btn_animated btn_animated--none">ЗАБРОНИРОВАТЬ</a>
+                          <a href="#?" class="btn btn_animated btn_animated--none">заказать</a>
                         </div>
                       
                       </div>
@@ -297,7 +306,7 @@
                           <p class="card-tour__text card-tour__text_2">
                             6999₽
                           </p>
-                          <a href="#?" class="btn btn_animated ">ЗАБРОНИРОВАТЬ</a>
+                          <a href="#?" class="btn btn_animated ">заказать</a>
                         </div>
                       
                       </div>
@@ -308,7 +317,7 @@
                 <a href="#?" class="btn btn_animated ">ЗАБРОНИРОВАТЬ</a>
               </div>
           </section>
-          <section class="section-reviews">
+          <section id="section-reviews"  class="section-reviews">
               <video class="bg-video" autoplay muted loop playsinline disablepictureinpicture preload="auto">
                 <source src="img/coverr-hot-air-balloons-near-mountains-5422-1080p.mp4" type="video/mp4">
                   <source src="img/coverr-hot-air-balloons-near-mountains-5422-1080p.webm"  type="video/webm">
@@ -367,7 +376,7 @@
                 <a href="#?" class="btn btn_animated">ЗАБРОНИРОВАТЬ</a>
               </div>
           </section>
-          <section class="section-form">
+          <section id="section-form" class="section-form">
               <div class="row">
                 <div class="book">
                   <div class="book__form">
@@ -410,32 +419,32 @@
           <nav class="nav footer__nav ">
           <ul class="nav__list">
             <li>
-              <a href="#" class="nav__list-gray">
+              <a href="https://www.whatsapp.com/?lang=ru_RU" class="nav__list-gray">
                 8 (900) 000 00 00
               </a>
             </li>
             <li>
-              <a href="#" class="nav__list-gray">
+              <a href="#section-about" class="nav__list-gray">
                 О НАС
               </a>
             </li>
-            <li >
-              <a href="#" class="nav__list-gray">
+            <li>
+              <a href="#section-adventure" class="nav__list-gray">
                 ПРЕИМУЩЕСТВА
               </a>
             </li>
-            <li >
-              <a href="#" class="nav__list-gray">
+            <li>
+              <a href="#section-tour" class="nav__list-gray">
                 туры
               </a>
             </li>
-            <li >
-               <a href="#" class="nav__list-gray">
+            <li>
+               <a href="#section-reviews" class="nav__list-gray">
                 ОТЗЫВЫ
               </a>
             </li>
-            <li >
-              <a href="#" class="nav__list-gray">
+            <li>
+              <a href="#section-form" class="nav__list-gray">
                 КОНТАКТЫ
               </a>
             </li>
@@ -445,4 +454,6 @@
       </footer>
     </div>
   </body>
+      <script src="chat.js"></script>
+    <script src="script.js"></script>
 </html>

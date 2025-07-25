@@ -2,6 +2,7 @@
 .btn
   &, &:link, &:visited
     @include style-link($color-grey)
+
     padding: 1.5rem 4rem
     border-radius: 5rem
     background: $color-white
@@ -36,13 +37,12 @@
       top: 0
       left: 0    
       z-index: -1
-      transition: all .5s
-     
-      
+      transition: all .5s     
   &_animated
     animation: btnToUp .5s ease-out .7s
 .btn__brown
   &, &:link, &:visited
+    cursor: pointer
     background: $brown-color-dark
     color: $color-white
     &::after
